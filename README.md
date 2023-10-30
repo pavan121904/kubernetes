@@ -27,7 +27,8 @@ This Capstone Project is aimed at developing and implementing a robust Continuou
 ### Step 3: Jenkins Setup
 
 **3.1. Jenkins Server Provisioning:**
-- Deploy Jenkins on an EC2 instance or utilize AWS Fargate for running Jenkins as an orchestrator of the CI/CD pipeline.
+- Deploy Jenkins on an EC2 instance through terraform for running Jenkins as an orchestrator of the CI/CD pipeline.
+- setup the **sonarqube server** and create the project to set the quality gates for checking the code has any bug or vulnerability
 ## Jenkins Plugins and Requirements
 
 This project relies on several essential Jenkins plugins to facilitate various integrations and execute critical tasks:
@@ -40,6 +41,8 @@ This project relies on several essential Jenkins plugins to facilitate various i
 - **Git Plugin**: Used for version control system integration, particularly for source code management.
 - **Pipeline Plugin**: Provides a framework for defining the CI/CD pipeline as code, allowing a structured approach to pipeline configuration.
 - **Credentials Plugin**: Facilitates secure management of credentials for integration and interaction with various services.
+- **SonarQube Scanner Plugin**: Integrates Jenkins with SonarQube for code analysis.
+- **unit Testing Plugins**: Use language-specific unit testing plugins
 
 
 ### Step 4: CI/CD Pipeline Configuration in Jenkins
@@ -51,7 +54,7 @@ This project relies on several essential Jenkins plugins to facilitate various i
 
 **4.2. Automated Testing:**
 - Implement automated tests to ensure the quality and functionality of the application. These tests may include unit and integration tests.
-- Utilize tools such as JUnit, Selenium, and SonarQube for code quality checks and bug identification.
+- Utilize tools such as JUnit, and SonarQube for code quality checks and bug identification.
 
 **4.3. Kubernetes Deployment:**
 - Employ Kubernetes configuration files (YAML) to define deployment and service objects for the microservices.
@@ -70,3 +73,4 @@ This project relies on several essential Jenkins plugins to facilitate various i
 
 **6.1. Automation:**
 - Configure Jenkins
+- create a webhook in github and integrate to the jenkins 
