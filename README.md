@@ -58,7 +58,7 @@ This project relies on several essential Jenkins plugins to facilitate various i
 
 **4.3. Kubernetes Deployment:**
 - Employ Kubernetes configuration files (YAML) to define deployment and service objects for the microservices.
-- Deploy the microservices to the Kubernetes cluster.
+- Deploy the microservices to the Kubernetes cluster.#this is what i need to do 
 
 ### Step 5: Serverless Component Deployment
 
